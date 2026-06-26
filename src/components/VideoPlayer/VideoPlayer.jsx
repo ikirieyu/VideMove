@@ -215,7 +215,7 @@ const VideoPlayer = forwardRef(function VideoPlayer(
     <div className="video-player" ref={containerRef}>
       <video
         ref={videoRef}
-        src={videoSrc || ''}
+        src={videoSrc || null}
         className="video-hidden"
         onTimeUpdate={(e) => {
           const t = e.target.currentTime;
